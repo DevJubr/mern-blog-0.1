@@ -1,0 +1,132 @@
+strong.footer_heading {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+.footer_post {
+  width: calc(100% / 3);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3rem;
+}
+
+section.footer__top {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-bottom: 2rem;
+}
+
+.category__and__tag {
+  width: calc(100% / 4.5);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.footer__articles {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+article.popular__singel {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  font-size: 0.8rem;
+}
+
+.popular__singel__img {
+  width: 50%;
+}
+
+.popular__singel__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+footer {
+  margin-top: 5rem;
+  padding: 2rem 0 0 0;
+  background: #0b0019;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3rem;
+}
+
+.footer__category {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.tag {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  flex-direction: column;
+  width: 100%;
+}
+
+.footer__tag {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+  font-size: 0.8rem;
+  width: 60%;
+}
+
+section.footer__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  /* background: #272727; */
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  padding: 1rem 0;
+}
+
+section.footer__bottom ul {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+section.footer__bottom p small {
+  color: blueviolet;
+  font-weight: 800;
+}
+section.footer__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background: #191919;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+.ff--con {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.4rem 0;
+}

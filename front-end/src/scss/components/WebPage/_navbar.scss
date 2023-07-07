@@ -151,11 +151,12 @@ nav {
         }
         .nav__items {
           position: absolute;
-          background-color: #10001844;
+          background-color: #100018bc;
           height: 90vh;
           top: 80px;
           left: 0%;
           width: 100%;
+          z-index: 999;
           transform: translateX(-100%);
           transition: transform 0.3s ease-in-out;
           .nav__ul {
@@ -204,10 +205,17 @@ nav {
             a {
               text-transform: capitalize;
               font-size: 1.3rem;
+              svg {
+                width: 2rem !important;
+                height: 2rem !important;
+              }
             }
           }
         }
       }
     }
   }
+}
+nav.nvc {
+  background-color: #462784;
 }

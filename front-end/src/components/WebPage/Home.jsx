@@ -1,7 +1,12 @@
-import React from "react";
-
+import Posts from "./articles/Posts";
+import Pagination from "./pagination/Pagination";
 const Home = () => {
-  return <></>;
+  return (
+    <>
+      <Posts />
+      <Pagination />
+    </>
+  );
 };
 
 export default Home;

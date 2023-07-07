@@ -1,9 +1,11 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-const NavBar = () => {
+import { HiUserCircle } from "react-icons/hi";
+
+const NavBar = ({ nvc }) => {
   const [navActive, setnavActive] = useState(false);
   return (
-    <nav>
+    <nav className={nvc ? "nvc" : ""}>
       <div className="con">
         <div className="nav__con">
           <div className="nav__con__left">
@@ -32,6 +34,11 @@ const NavBar = () => {
                 </li>
                 <li className="nav__item">
                   <NavLink to={"policy"}>policy</NavLink>
+                </li>
+                <li className="nav__item">
+                  <NavLink to={"singup"}>
+                    <HiUserCircle />
+                  </NavLink>
                 </li>
               </ul>
             </div>
