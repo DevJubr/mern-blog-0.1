@@ -1,3 +1,4 @@
+import { AiOutlineSend } from "react-icons/ai";
 import { styled } from "styled-components";
 
 export const CmtTogol = styled.button`
@@ -84,6 +85,7 @@ export const ReplyImage = styled.img`
 `;
 
 export const StyledComments = styled.div`
+  width: 100%;
   .comment {
     ${CommentContainer}
   }
@@ -123,4 +125,41 @@ export const StyledComments = styled.div`
   .riplys img {
     ${ReplyImage}
   }
+`;
+
+export const Comment_Box_Input = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-top: 4rem;
+`;
+
+export const CommentInputBox = styled.div`
+  display: flex;
+  position: relative;
+  align-items: flex-end;
+  width: 80%;
+`;
+
+export const CommentInput = styled.input`
+  padding: 0.7rem 0rem 5rem 0.7rem;
+  font-size: 1rem;
+  text-transform: capitalize;
+  border-radius: 0.5rem;
+  background: #e3d6ffe3;
+  width: 100%;
+`;
+
+export const CommentSendIcon = styled.span`
+  position: absolute;
+  right: 15px !important;
+  bottom: 8px !important;
+`;
+
+export const SendIcon = styled(AiOutlineSend)`
+  fill: blueviolet;
+  cursor: pointer;
+  width: 1.3rem;
+  height: 1.3rem;
 `;

@@ -20,7 +20,7 @@ import SingUp from "../components/auth/singup/Singup";
 import SingIn from "../components/auth/singin/SingIn";
 import NavLayout from "../components/layout/NavLayout";
 import Login from "../components/auth/admin/Login";
-
+import Dashboard from "../components/dashboard/Dashboard";
 // hendel route
 export const route = createBrowserRouter(
   createRoutesFromElements(
@@ -47,6 +47,8 @@ export const route = createBrowserRouter(
         <Route path="singin" element={<SingIn />} />
         <Route path="admin/login" element={<Login />} />
       </Route>
+
+      <Route path="admin/dashboard" element={<Dashboard />} />
     </>
   )
 );

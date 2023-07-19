@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { PiArrowBendDownRightBold } from "react-icons/pi";
+import ShowMoreBtn from "./ShowMoreBtn";
 import {
   CmtTogol,
   CommentAndReplyContainer,
@@ -11,17 +11,7 @@ import {
   RepliesContainer,
   ReplyButton,
   ReplyImage,
-  Shcop,
 } from "../../../styles/__comment";
-
-const ShB = ({ item }) => {
-  return (
-    <Shcop>
-      <PiArrowBendDownRightBold />
-      <span>{item.replays[0].user} riplyed</span>
-    </Shcop>
-  );
-};
 
 const CommentComponent = ({ item }) => {
   const [showR, setshowR] = useState(false);
@@ -49,7 +39,7 @@ const CommentComponent = ({ item }) => {
 
       {item?.replays?.length > 0 && (
         <CmtTogol className="comment__toggle" onClick={toggleReplies}>
-          {showR ? null : <ShB item={item} />}
+          {showR ? null : <ShowMoreBtn item={item} />}
         </CmtTogol>
       )}
 
