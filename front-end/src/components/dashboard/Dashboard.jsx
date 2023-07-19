@@ -5,6 +5,7 @@ import MuiDrawer from "@mui/material/Drawer";
 import Box from "@mui/material/Box";
 import MuiAppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
+import PrimarySearchAppBar from "./ToolBar";
 import List from "@mui/material/List";
 import Typography from "@mui/material/Typography";
 import Divider from "@mui/material/Divider";
@@ -99,8 +100,9 @@ export default function Dashboard() {
     <ThemeProvider theme={defaultTheme}>
       <Box sx={{ display: "flex" }}>
         <CssBaseline />
+
         <AppBar position="absolute" open={open}>
-          <Toolbar
+          {/* <Toolbar
             sx={{
               pr: "24px", // keep right padding when drawer closed
             }}
@@ -110,10 +112,7 @@ export default function Dashboard() {
               color="inherit"
               aria-label="open drawer"
               onClick={toggleDrawer}
-              sx={{
-                marginRight: "36px",
-                ...(open && { display: "none" }),
-              }}
+              
             >
               <MenuIcon />
             </IconButton>
@@ -131,8 +130,16 @@ export default function Dashboard() {
                 <NotificationsIcon />
               </Badge>
             </IconButton>
-          </Toolbar>
+          </Toolbar> */}
+          <PrimarySearchAppBar
+            Click={toggleDrawer}
+            sx={{
+              marginRight: "36px",
+              ...(open && { display: "none" }),
+            }}
+          />
         </AppBar>
+
         <Drawer variant="permanent" open={open}>
           <Toolbar
             sx={{
