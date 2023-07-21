@@ -26,6 +26,8 @@ const AItem = styled.div`
     width: 1.8rem;
     height: 1.8rem;
     cursor: pointer;
+    opacity: 1;
+    z-index: 9999;
   }
 `;
 
@@ -35,7 +37,7 @@ const NestedInner = styled.div`
   flex-direction: column;
   align-items: flex-start;
   gap: 0.8rem;
-  margin: -3rem 0 0 0;
+  margin: -2rem 0 0 0;
   opacity: 0;
   transition: all 0.3s ease;
   /* You can use props here to conditionally apply styles */
@@ -61,24 +63,28 @@ export const NestedCon = styled.div`
 
 const NestedListComponents = () => {
   const [isVisible, setisVisible] = useState(false);
+  console.log(isVisible);
   return (
-    <NestedContainer className="nested">
-      <NestedOuter className="nested__outer">
-        <AItem className="A__item">
+    <NestedContainer>
+      <NestedOuter>
+        <AItem>
           <AiFillDashboard />
-          <span className="title__of__aItem">databoard</span>
-          <FiChevronRight onClick={() => setisVisible(!isVisible)} />
+          <span className="dsbl">databoard</span>
+          <FiChevronRight
+            className="dsbl"
+            onClick={() => setisVisible(!isVisible)}
+          />
         </AItem>
       </NestedOuter>
       {/* Pass the isVisible prop to the NestedInner styled-component */}
-      <NestedInner className="nested__inner" isVisible={isVisible}>
-        <ANestedInnerItem className="A__nested__inner__item">
+      <NestedInner isVisible={isVisible}>
+        <ANestedInnerItem>
           <AiFillDashboard />
-          <span className="title__of__nstdaItem">databoard</span>
+          <span>databoard</span>
         </ANestedInnerItem>
-        <ANestedInnerItem className="A__nested__inner__item">
+        <ANestedInnerItem>
           <AiFillDashboard />
-          <span className="title__of__nstdaItem">databoard</span>
+          <span>databoard</span>
         </ANestedInnerItem>
       </NestedInner>
     </NestedContainer>
