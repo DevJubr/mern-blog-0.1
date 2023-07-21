@@ -26,6 +26,7 @@ import TagPageD from "../components/dashboard/pages/tag";
 import CategoryPageD from "../components/dashboard/pages/category";
 import UsersPageD from "../components/dashboard/pages/users";
 import DashboardMainPage from "../components/dashboard/pages";
+import AddArticle from "../components/dashboard/pages/article/AddArticle";
 // hendel route
 export const route = createBrowserRouter(
   createRoutesFromElements(
@@ -55,10 +56,14 @@ export const route = createBrowserRouter(
 
       <Route path="admin/dashboard" element={<Dashboard />}>
         <Route index element={<DashboardMainPage />} />
-        <Route path="posts" element={<ArticlePageD />} />
-        <Route path="tags" element={<TagPageD />} />
-        <Route path="categorys" element={<CategoryPageD />} />
-        <Route path="users" element={<UsersPageD />} />
+        <Route path="posts/allpost/:currentPage?" element={<ArticlePageD />} />
+        <Route path="posts/addpost" element={<AddArticle />} />
+        <Route path="tags/alltag" element={<TagPageD />} />
+        {/* <Route path="tags/addtag" element={<TagPageD />} /> */}
+        <Route path="categorys/allcategory" element={<CategoryPageD />} />
+        {/* <Route path="categorys/addcategory" element={<CategoryPageD />} /> */}
+        <Route path="users/allusers" element={<UsersPageD />} />
+        {/* <Route path="users/addusers" element={<UsersPageD />} /> */}
       </Route>
     </>
   )
