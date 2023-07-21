@@ -56,7 +56,7 @@ const App__Bar = ({
           component="div"
           sx={{ display: { xs: "none", sm: "block" } }}
         >
-          MUI
+          M-BLOG
         </Typography>
         <Search>
           <SearchIconWrapper>

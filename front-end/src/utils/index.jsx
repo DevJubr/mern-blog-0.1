@@ -1,3 +1,8 @@
+import { MdOutlineArticle, MdPostAdd } from "react-icons/md";
+import { LiaBorderAllSolid } from "react-icons/lia";
+import { AiOutlineUser, AiFillTags, AiOutlineUserAdd } from "react-icons/ai";
+import { BiCategory } from "react-icons/bi";
+
 export const commemts = [
   {
     user: "kamal",
@@ -68,48 +73,61 @@ export const commemts = [
 export const fakedsb = [
   {
     title: "dashboadrd",
+    icon: <MdOutlineArticle />,
   },
   {
     title: "article",
+    icon: <MdOutlineArticle />,
     nested: [
       {
         title: "all article",
+        icon: <LiaBorderAllSolid />,
       },
       {
         title: "add article",
+        icon: <MdPostAdd />,
       },
     ],
   },
   {
     title: "tag",
+    icon: <AiFillTags />,
     nested: [
       {
         title: "all tag",
+        icon: <LiaBorderAllSolid />,
       },
       {
         title: "add tag",
+        icon: <MdPostAdd />,
       },
     ],
   },
   {
     title: "category",
+    icon: <BiCategory />,
     nested: [
       {
         title: "all category",
+        icon: <LiaBorderAllSolid />,
       },
       {
         title: "add category",
+        icon: <MdPostAdd />,
       },
     ],
   },
   {
     title: "users",
+    icon: <AiOutlineUser />,
     nested: [
       {
         title: "all users",
+        icon: <LiaBorderAllSolid />,
       },
       {
         title: "add users",
+        icon: <AiOutlineUserAdd />,
       },
     ],
   },

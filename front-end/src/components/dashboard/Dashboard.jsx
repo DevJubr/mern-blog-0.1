@@ -131,6 +131,7 @@ export default function Dashboard() {
             <NestedCon>
               {fakedsb?.map((item) => (
                 <NestedListComponents
+                  icon={item?.icon}
                   title={item?.title}
                   nested={item?.nested}
                   style={item?.nested ? null : { marginBottom: "3rem" }}

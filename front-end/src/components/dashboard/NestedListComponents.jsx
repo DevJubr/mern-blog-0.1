@@ -2,7 +2,10 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { AiFillDashboard } from "react-icons/ai";
 import { FiChevronRight } from "react-icons/fi";
-
+import { MdOutlineArticle, MdPostAdd } from "react-icons/md";
+import { LiaBorderAllSolid } from "react-icons/lia";
+import { AiOutlineUser, AiFillTags, AiOutlineUserAdd } from "react-icons/ai";
+import { BiCategory } from "react-icons/bi";
 const NestedContainer = styled.div`
   padding: 1rem 1rem 0 1rem;
 `;
@@ -37,14 +40,14 @@ const NestedInner = styled.div`
   flex-direction: column;
   align-items: flex-start;
   gap: 0.8rem;
-  margin: -4rem 0 0 0;
+  margin: -1rem 0 0 0;
   opacity: 0;
   transition: all 0.3s ease;
   /* You can use props here to conditionally apply styles */
   ${(props) =>
     props.isVisible &&
     `
-    opacity: 1;
+    opacity: 8;
     margin: 0;
   `}
 `;
@@ -59,15 +62,16 @@ const ANestedInnerItem = styled.div`
 export const NestedCon = styled.div`
   display: flex;
   flex-direction: column;
+  gap: 2rem;
 `;
 
-const NestedListComponents = ({ title, nested, style }) => {
+const NestedListComponents = ({ icon, title, nested, style }) => {
   const [isVisible, setisVisible] = useState(false);
   return (
     <NestedContainer style={style}>
       <NestedOuter>
         <AItem>
-          <AiFillDashboard />
+          {icon}
           <span className="dsbl">{title}</span>
           <FiChevronRight
             style={style ? { visibility: "hidden" } : null}
@@ -79,7 +83,7 @@ const NestedListComponents = ({ title, nested, style }) => {
       <NestedInner isVisible={isVisible}>
         {nested?.map((nes) => (
           <ANestedInnerItem>
-            <AiFillDashboard />
+            {nes?.icon}
             <span>{nes?.title}</span>
           </ANestedInnerItem>
         ))}
