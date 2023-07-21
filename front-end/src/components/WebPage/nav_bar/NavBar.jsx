@@ -5,7 +5,7 @@ import { HiUserCircle } from "react-icons/hi";
 const NavBar = ({ nvc }) => {
   const [navActive, setnavActive] = useState(false);
   return (
-    <nav className={nvc ? "nvc" : ""}>
+    <nav className={nvc ? "nvc" : "nAvBaR"}>
       <div className="con">
         <div className="nav__con">
           <div className="nav__con__left">
