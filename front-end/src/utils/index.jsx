@@ -79,59 +79,67 @@ export const fakedsb = [
   {
     title: "article",
     icon: <MdOutlineArticle />,
-    path: "posts",
+
     nested: [
       {
         title: "all article",
+        path: "posts/allpost",
         icon: <LiaBorderAllSolid />,
       },
       {
         title: "add article",
+        path: "posts/addpost",
         icon: <MdPostAdd />,
       },
     ],
   },
   {
     title: "tag",
-    path: "tags",
+
     icon: <AiFillTags />,
     nested: [
       {
         title: "all tag",
+        path: "tags/alltag",
         icon: <LiaBorderAllSolid />,
       },
       {
         title: "add tag",
+        path: "tags/addtag",
         icon: <MdPostAdd />,
       },
     ],
   },
   {
     title: "category",
-    path: "categorys",
+
     icon: <BiCategory />,
     nested: [
       {
         title: "all category",
+        path: "categorys/allcategory",
         icon: <LiaBorderAllSolid />,
       },
       {
         title: "add category",
+        path: "categorys/addcategory",
         icon: <MdPostAdd />,
       },
     ],
   },
   {
     title: "users",
-    path: "users",
+
     icon: <AiOutlineUser />,
     nested: [
       {
         title: "all users",
+        path: "users/allusers",
         icon: <LiaBorderAllSolid />,
       },
       {
         title: "add users",
+        path: "users/addusers",
         icon: <AiOutlineUserAdd />,
       },
     ],

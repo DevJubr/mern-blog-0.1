@@ -66,7 +66,7 @@ export const NestedCon = styled.div`
   gap: 2rem;
 `;
 
-const NestedListComponents = ({ icon, title, nested, style, path }) => {
+const NestedListComponents = ({ icon, title, nested, style }) => {
   const [isVisible, setisVisible] = useState(false);
   return (
     <NestedContainer style={style}>
@@ -75,23 +75,21 @@ const NestedListComponents = ({ icon, title, nested, style, path }) => {
           {icon}
           <span className="dsbl">{title}</span>
 
-          <Link
-            to={`/admin/dashboard/${path}`}
+          <FiChevronRight
+            style={style ? { visibility: "hidden" } : null}
+            className="dsbl"
             onClick={() => setisVisible(!isVisible)}
-          >
-            <FiChevronRight
-              style={style ? { visibility: "hidden" } : null}
-              className="dsbl"
-            />
-          </Link>
+          />
         </AItem>
       </NestedOuter>
       <NestedInner isVisible={isVisible}>
         {nested?.map((nes) => (
-          <ANestedInnerItem>
-            {nes?.icon}
-            <span>{nes?.title}</span>
-          </ANestedInnerItem>
+          <Link to={`/admin/dashboard/${nes?.path}`}>
+            <ANestedInnerItem>
+              {nes?.icon}
+              <span>{nes?.title}</span>
+            </ANestedInnerItem>
+          </Link>
         ))}
       </NestedInner>
     </NestedContainer>

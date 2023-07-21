@@ -133,7 +133,6 @@ export default function Dashboard() {
                 <NestedListComponents
                   icon={item?.icon}
                   title={item?.title}
-                  path={item?.path}
                   nested={item?.nested}
                   style={item?.nested ? null : { marginBottom: "3rem" }}
                 />
