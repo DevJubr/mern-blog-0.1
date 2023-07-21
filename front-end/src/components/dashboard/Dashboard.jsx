@@ -24,7 +24,7 @@ import Deposits from "./Deposits";
 import Orders from "./Orders";
 import { fakedsb } from "../../utils/index";
 import NestedListComponents, { NestedCon } from "./NestedListComponents";
-
+import { Outlet } from "react-router-dom";
 function Copyright(props) {
   return (
     <Typography
@@ -133,6 +133,7 @@ export default function Dashboard() {
                 <NestedListComponents
                   icon={item?.icon}
                   title={item?.title}
+                  path={item?.path}
                   nested={item?.nested}
                   style={item?.nested ? null : { marginBottom: "3rem" }}
                 />
@@ -140,23 +141,23 @@ export default function Dashboard() {
             </NestedCon>
           </List>
         </Drawer>
+
         <Box
           component="main"
           sx={{
-            backgroundColor: (theme) =>
-              theme.palette.mode === "light"
-                ? theme.palette.grey[100]
-                : theme.palette.grey[900],
             flexGrow: 1,
             height: "100vh",
             overflow: "auto",
           }}
         >
-          <Toolbar />
+          {/* <Toolbar /> */}
+
           <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
-            <Grid container spacing={3}>
+            <Grid container spacing={3} marginTop={"5rem"}>
+              <Outlet />
+
               {/* Chart */}
-              <Grid item xs={12} md={8} lg={9}>
+              {/* <Grid item xs={12} md={8} lg={9}>
                 <Paper
                   sx={{
                     p: 2,
@@ -167,35 +168,10 @@ export default function Dashboard() {
                 >
                   <Chart />
                 </Paper>
-              </Grid>
-              {/* Recent Deposits */}
-              <Grid item xs={12} md={4} lg={3}>
-                <Paper
-                  sx={{
-                    p: 2,
-                    display: "flex",
-                    flexDirection: "column",
-                    height: 240,
-                  }}
-                >
-                  <Deposits />
-                </Paper>
-              </Grid>
-              {/* Recent Orders */}
-              <Grid item xs={12}>
-                <Paper
-                  sx={{
-                    p: 2,
-                    display: "flex",
-                    flexDirection: "column",
-                    overflow: "auto",
-                  }}
-                >
-                  <Orders />
-                </Paper>
-              </Grid>
+              </Grid> */}
             </Grid>
-            <Copyright sx={{ pt: 4 }} />
+
+            {/* <Copyright sx={{ pt: 4 }} /> */}
           </Container>
         </Box>
       </Box>

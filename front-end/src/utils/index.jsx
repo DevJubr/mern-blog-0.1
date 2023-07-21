@@ -74,10 +74,12 @@ export const fakedsb = [
   {
     title: "dashboadrd",
     icon: <MdOutlineArticle />,
+    path: "",
   },
   {
     title: "article",
     icon: <MdOutlineArticle />,
+    path: "posts",
     nested: [
       {
         title: "all article",
@@ -91,6 +93,7 @@ export const fakedsb = [
   },
   {
     title: "tag",
+    path: "tags",
     icon: <AiFillTags />,
     nested: [
       {
@@ -105,6 +108,7 @@ export const fakedsb = [
   },
   {
     title: "category",
+    path: "categorys",
     icon: <BiCategory />,
     nested: [
       {
@@ -119,6 +123,7 @@ export const fakedsb = [
   },
   {
     title: "users",
+    path: "users",
     icon: <AiOutlineUser />,
     nested: [
       {

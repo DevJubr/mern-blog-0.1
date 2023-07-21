@@ -6,6 +6,7 @@ import { MdOutlineArticle, MdPostAdd } from "react-icons/md";
 import { LiaBorderAllSolid } from "react-icons/lia";
 import { AiOutlineUser, AiFillTags, AiOutlineUserAdd } from "react-icons/ai";
 import { BiCategory } from "react-icons/bi";
+import { Link } from "react-router-dom";
 const NestedContainer = styled.div`
   padding: 1rem 1rem 0 1rem;
 `;
@@ -65,7 +66,7 @@ export const NestedCon = styled.div`
   gap: 2rem;
 `;
 
-const NestedListComponents = ({ icon, title, nested, style }) => {
+const NestedListComponents = ({ icon, title, nested, style, path }) => {
   const [isVisible, setisVisible] = useState(false);
   return (
     <NestedContainer style={style}>
@@ -73,11 +74,16 @@ const NestedListComponents = ({ icon, title, nested, style }) => {
         <AItem>
           {icon}
           <span className="dsbl">{title}</span>
-          <FiChevronRight
-            style={style ? { visibility: "hidden" } : null}
-            className="dsbl"
+
+          <Link
+            to={`/admin/dashboard/${path}`}
             onClick={() => setisVisible(!isVisible)}
-          />
+          >
+            <FiChevronRight
+              style={style ? { visibility: "hidden" } : null}
+              className="dsbl"
+            />
+          </Link>
         </AItem>
       </NestedOuter>
       <NestedInner isVisible={isVisible}>

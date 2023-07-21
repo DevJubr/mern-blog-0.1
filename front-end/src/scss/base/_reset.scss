@@ -15,7 +15,7 @@
 body {
   font-family: "Montserrat", sans-serif;
   letter-spacing: 0.5px;
-  background-color: var(--bg);
+  background-color: var(--bg) !important;
   color: var(--text);
 }
 a {
@@ -48,6 +48,10 @@ nav.MuiList-root.MuiList-padding.css-1mcnwpj-MuiList-root {
 main.css-fxbtpg {
   background-color: #030617 !important;
 }
-.css-t5ouwv-MuiPaper-root {
-  background-color: #ab8cc8;
+.css-t5ouwv-MuiPaper-root,
+.css-1ny42z-MuiPaper-root {
+  background-color: #ab8cc8 !important;
+}
+.css-9wziol-MuiTypography-root {
+  color: #c4c4c4 !important;
 }
