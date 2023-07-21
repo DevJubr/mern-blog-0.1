@@ -25,6 +25,7 @@ import ArticlePageD from "../components/dashboard/pages/article";
 import TagPageD from "../components/dashboard/pages/tag";
 import CategoryPageD from "../components/dashboard/pages/category";
 import UsersPageD from "../components/dashboard/pages/users";
+import DashboardMainPage from "../components/dashboard/pages";
 // hendel route
 export const route = createBrowserRouter(
   createRoutesFromElements(
@@ -53,7 +54,7 @@ export const route = createBrowserRouter(
       </Route>
 
       <Route path="admin/dashboard" element={<Dashboard />}>
-        {/* <Route index element={<Dashboard />} /> */}
+        <Route index element={<DashboardMainPage />} />
         <Route path="posts" element={<ArticlePageD />} />
         <Route path="tags" element={<TagPageD />} />
         <Route path="categorys" element={<CategoryPageD />} />
