@@ -22,7 +22,8 @@ import { mainListItems } from "./listItems";
 import Chart from "./Chart";
 import Deposits from "./Deposits";
 import Orders from "./Orders";
-import NestedListComponents from "./NestedListComponents";
+import { fakedsb } from "../../utils/index";
+import NestedListComponents, { NestedCon } from "./NestedListComponents";
 
 function Copyright(props) {
   return (
@@ -126,24 +127,16 @@ export default function Dashboard() {
             </IconButton>
           </Toolbar>
           <Divider />
-          <List
-            component="nav"
-            // style={{
-            //   display: "flex",
-            //   flexDirection: "column",
-            //   alignItems: "flex-start",
-            //   marginTop: "22rem",
-            //   background: "#ffff",
-            //   gap: "2rem",
-            // }}
-          >
-            <div className="nested__con">
-              <NestedListComponents />
-              <NestedListComponents />
-              <NestedListComponents />
-              <NestedListComponents />
-              <NestedListComponents />
-            </div>
+          <List>
+            <NestedCon>
+              {fakedsb?.map((item) => (
+                <NestedListComponents
+                  title={item?.title}
+                  nested={item?.nested}
+                  style={item?.nested ? null : { marginBottom: "3rem" }}
+                />
+              ))}
+            </NestedCon>
           </List>
         </Drawer>
         <Box

@@ -64,3 +64,53 @@ export const commemts = [
     ],
   },
 ];
+
+export const fakedsb = [
+  {
+    title: "dashboadrd",
+  },
+  {
+    title: "article",
+    nested: [
+      {
+        title: "all article",
+      },
+      {
+        title: "add article",
+      },
+    ],
+  },
+  {
+    title: "tag",
+    nested: [
+      {
+        title: "all tag",
+      },
+      {
+        title: "add tag",
+      },
+    ],
+  },
+  {
+    title: "category",
+    nested: [
+      {
+        title: "all category",
+      },
+      {
+        title: "add category",
+      },
+    ],
+  },
+  {
+    title: "users",
+    nested: [
+      {
+        title: "all users",
+      },
+      {
+        title: "add users",
+      },
+    ],
+  },
+];
