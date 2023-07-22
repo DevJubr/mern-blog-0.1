@@ -27,6 +27,7 @@ import CategoryPageD from "../components/dashboard/pages/category";
 import UsersPageD from "../components/dashboard/pages/users";
 import DashboardMainPage from "../components/dashboard/pages";
 import AddArticle from "../components/dashboard/pages/article/AddArticle";
+import AddCategory from "../components/dashboard/pages/category/AddCategory";
 // hendel route
 export const route = createBrowserRouter(
   createRoutesFromElements(
@@ -61,7 +62,7 @@ export const route = createBrowserRouter(
         <Route path="tags/alltag" element={<TagPageD />} />
         {/* <Route path="tags/addtag" element={<TagPageD />} /> */}
         <Route path="categorys/allcategory" element={<CategoryPageD />} />
-        {/* <Route path="categorys/addcategory" element={<CategoryPageD />} /> */}
+        <Route path="categorys/addcategory" element={<AddCategory />} />
         <Route path="users/allusers" element={<UsersPageD />} />
         {/* <Route path="users/addusers" element={<UsersPageD />} /> */}
       </Route>

@@ -22,6 +22,9 @@ const AddArticle = () => {
           onBlur={(newContent) => setContent(newContent)} // preferred to use only this option to update the content for performance reasons
           onChange={(e) => setContent(e.target.value)}
         />
+        <button className="btn__addarticleDiv" type="submti">
+          add article
+        </button>
       </form>
     </div>
   );
