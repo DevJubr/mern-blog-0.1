@@ -20,17 +20,7 @@ import SingUp from "../components/auth/singup/Singup";
 import SingIn from "../components/auth/singin/SingIn";
 import NavLayout from "../components/layout/NavLayout";
 import Login from "../components/auth/admin/Login";
-import Dashboard from "../components/dashboard/Dashboard";
-import ArticlePageD from "../components/dashboard/pages/article";
-import TagPageD from "../components/dashboard/pages/tag";
-import CategoryPageD from "../components/dashboard/pages/category";
-import UsersPageD from "../components/dashboard/pages/users";
-import DashboardMainPage from "../components/dashboard/pages";
-import AddArticle from "../components/dashboard/pages/article/AddArticle";
-import AddCategory from "../components/dashboard/pages/category/AddCategory";
-import EditCategory from "../components/dashboard/pages/category/EditCategory";
-import AddTag from "../components/dashboard/pages/tag/AddTag";
-import AllSubAdmin from "../components/dashboard/pages/users/AllSubAdmin";
+import HomeDashboard from "../components/dashboard/pages/home/Home";
 // hendel route
 export const route = createBrowserRouter(
   createRoutesFromElements(
@@ -58,20 +48,8 @@ export const route = createBrowserRouter(
         <Route path="admin/login" element={<Login />} />
       </Route>
 
-      <Route path="admin/dashboard" element={<Dashboard />}>
-        <Route index element={<DashboardMainPage />} />
-        <Route path="posts/allpost/:currentPage?" element={<ArticlePageD />} />
-        <Route path="posts/addpost" element={<AddArticle />} />
-
-        <Route path="tags/alltag" element={<TagPageD />} />
-        <Route path="tags/addtag" element={<AddTag />} />
-
-        <Route path="categorys/allcategory" element={<CategoryPageD />} />
-        <Route path="categorys/addcategory" element={<AddCategory />} />
-        <Route path="categorys/editcategory/:slug" element={<EditCategory />} />
-
-        <Route path="admins/allsubadmins" element={<AllSubAdmin />} />
-        {/* <Route path="users/addusers" element={<UsersPageD />} /> */}
+      <Route>
+        <Route path="admin/dashboard" element={<HomeDashboard />} />
       </Route>
     </>
   )
