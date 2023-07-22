@@ -16,7 +16,11 @@ const ANestedList = ({ icon, nFor, nested }) => {
           {icon}
           <span className="name__list__of">{nFor}</span>
         </div>
-        <div className="icon__showMOre" onClick={() => setopen(!open)}>
+        <div
+          className="icon__showMOre"
+          onClick={() => setopen(!open)}
+          style={nFor == "dashboadrd" ? { display: "none" } : null}
+        >
           <BsChevronCompactDown />
         </div>
       </div>
