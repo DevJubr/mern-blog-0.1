@@ -117,6 +117,9 @@ button.submit_-search__Dashboard {
 ul.Outter__List {
   width: 100%;
   padding: 2.4rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 li.outter__list__item .show {
@@ -142,7 +145,7 @@ li.outter__list__item {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 1rem;
+  gap: 1.6rem;
 }
 
 ul.inner__option {
@@ -153,6 +156,10 @@ ul.inner__option {
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.8rem;
 }
 .inner__option.active {
   visibility: visible;
