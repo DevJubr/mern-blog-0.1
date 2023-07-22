@@ -29,6 +29,8 @@ import DashboardMainPage from "../components/dashboard/pages";
 import AddArticle from "../components/dashboard/pages/article/AddArticle";
 import AddCategory from "../components/dashboard/pages/category/AddCategory";
 import EditCategory from "../components/dashboard/pages/category/EditCategory";
+import AddTag from "../components/dashboard/pages/tag/AddTag";
+import AllSubAdmin from "../components/dashboard/pages/users/AllSubAdmin";
 // hendel route
 export const route = createBrowserRouter(
   createRoutesFromElements(
@@ -60,13 +62,15 @@ export const route = createBrowserRouter(
         <Route index element={<DashboardMainPage />} />
         <Route path="posts/allpost/:currentPage?" element={<ArticlePageD />} />
         <Route path="posts/addpost" element={<AddArticle />} />
+
         <Route path="tags/alltag" element={<TagPageD />} />
-        {/* <Route path="tags/addtag" element={<TagPageD />} /> */}
+        <Route path="tags/addtag" element={<AddTag />} />
+
         <Route path="categorys/allcategory" element={<CategoryPageD />} />
         <Route path="categorys/addcategory" element={<AddCategory />} />
         <Route path="categorys/editcategory/:slug" element={<EditCategory />} />
 
-        <Route path="users/allusers" element={<UsersPageD />} />
+        <Route path="admins/allsubadmins" element={<AllSubAdmin />} />
         {/* <Route path="users/addusers" element={<UsersPageD />} /> */}
       </Route>
     </>

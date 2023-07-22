@@ -134,7 +134,7 @@ export const fakedsb = [
     nested: [
       {
         title: "all users",
-        path: "users/allusers",
+        path: "admins/allsubadmins",
         icon: <LiaBorderAllSolid />,
       },
       {
