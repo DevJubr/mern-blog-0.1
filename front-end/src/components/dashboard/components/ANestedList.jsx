@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import { BsChevronCompactDown } from "react-icons/bs";
 
 const ANestedList = ({ icon, nFor, nested }) => {
+  const [open, setopen] = useState(false);
   return (
     <li className="outter__list__item">
       <div className="show">
@@ -14,12 +15,12 @@ const ANestedList = ({ icon, nFor, nested }) => {
           {icon}
           <span className="name__list__of">{nFor}</span>
         </div>
-        <div className="icon__showMOre">
+        <div className="icon__showMOre" onClick={() => setopen(!open)}>
           <BsChevronCompactDown />
         </div>
       </div>
 
-      <ul className="inner__option">
+      <ul className={open ? "inner__option active" : "inner__option"}>
         {nested?.map((item) => {
           return (
             <Link to={item?.path}>
