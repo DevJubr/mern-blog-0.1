@@ -1,5 +1,6 @@
 import SIngelPost from "../../components/SIngelPost";
 import PageHeader from "../../components/PageHeader";
+import Pagination from "../../../WebPage/pagination/Pagination";
 const AllPosts = () => {
   return (
     <div className="AllPosts">
@@ -11,6 +12,8 @@ const AllPosts = () => {
         <SIngelPost />
         <SIngelPost />
       </div>
+
+      <Pagination />
     </div>
   );
 };
