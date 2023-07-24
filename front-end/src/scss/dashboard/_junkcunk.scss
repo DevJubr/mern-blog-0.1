@@ -349,3 +349,22 @@ p.text__decDBAL {
   margin: 4rem 0;
 }
 // -----------------------all post pahe cnank----------------------------------
+
+// -----------------------tag add pahe cnank----------------------------------
+.AddTag {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+  height: 50vh;
+  justify-content: center;
+}
+
+input.adding {
+  width: 50% !important;
+  padding-bottom: 6rem !important;
+  font-size: 1rem;
+  color: aliceblue;
+}
+// -----------------------tag add pahe cnank----------------------------------
