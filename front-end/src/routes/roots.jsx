@@ -23,6 +23,7 @@ import Login from "../components/auth/admin/Login";
 import LayoutOfD from "../components/dashboard/pages/Layout/LayoutOfD";
 import AddArticle from "../components/dashboard/pages/Article/AddArticle";
 import HomeD from "../components/dashboard/pages/Home/HomeD";
+import AllPosts from "../components/dashboard/pages/Article/AllPosts";
 // hendel route
 export const route = createBrowserRouter(
   createRoutesFromElements(
@@ -56,6 +57,7 @@ export const route = createBrowserRouter(
           path={"admin/dashboard/posts/addpost"}
           element={<AddArticle />}
         />
+        <Route path={"admin/dashboard/posts/allpost"} element={<AllPosts />} />
       </Route>
     </>
   )

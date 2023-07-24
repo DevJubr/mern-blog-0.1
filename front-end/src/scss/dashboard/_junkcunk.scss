@@ -268,3 +268,84 @@ button.add_post {
   height: 100% !important;
 }
 // -----------------------add post pahe cnank----------------------------------
+
+// -----------------------all post pahe cnank----------------------------------
+.AllPosts {
+  width: 75%;
+  margin: 4rem 0;
+}
+
+header.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem 0;
+  text-transform: capitalize;
+}
+
+button.addPost {
+  font-size: 1rem;
+  text-transform: capitalize;
+  background: transparent;
+  color: aliceblue;
+  border: 0.5px solid #dddddd57;
+  padding: 0.8rem 2.4rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+header.header form input {
+  font-size: 1rem;
+  text-transform: capitalize;
+  color: aliceblue;
+}
+
+span.nameHD {
+  font-size: 1.4rem;
+}
+
+.postSingel {
+  width: 300px;
+  height: 325px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1px solid #dddddd2b;
+}
+
+.imgDBAL {
+  width: 100%;
+}
+
+.imgDBAL img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.texts__DBAL {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.6rem;
+}
+
+h2.titleof__DBLa {
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+p.text__decDBAL {
+  font-size: 0.8rem;
+}
+
+.AllPosts__singel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  margin: 4rem 0;
+}
+// -----------------------all post pahe cnank----------------------------------
