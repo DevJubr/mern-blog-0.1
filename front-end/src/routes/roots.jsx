@@ -50,9 +50,12 @@ export const route = createBrowserRouter(
         <Route path="admin/login" element={<Login />} />
       </Route>
 
-      <Route path={"admin/dashboard"} element={<LayoutOfD />}>
-        <Route index element={<HomeD />} />
-        <Route path="admin/dashboard/post/addpost" element={<AddArticle />} />
+      <Route element={<LayoutOfD />}>
+        <Route path={"admin/dashboard"} element={<HomeD />} />
+        <Route
+          path={"admin/dashboard/posts/addpost"}
+          element={<AddArticle />}
+        />
       </Route>
     </>
   )

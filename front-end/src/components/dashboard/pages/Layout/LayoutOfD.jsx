@@ -9,7 +9,7 @@ const LayoutOfD = () => {
         <AsideD />
 
         <NavD />
-        <main className="Ds">
+        <main className="Ds con">
           <Outlet />
         </main>
       </div>

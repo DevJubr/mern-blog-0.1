@@ -188,3 +188,77 @@ main.Ds {
   left: calc(100% - 70%);
 }
 // -----------------------home pahe cnank----------------------------------
+// -----------------------add post pahe cnank----------------------------------
+
+.AddArticle {
+  width: 75%;
+}
+
+.AddArticle form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3rem;
+  margin: 4rem 0;
+}
+
+.FormGroup {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.6rem;
+}
+
+label {
+  font-size: 1.4rem;
+}
+
+span.errorMsg {
+  font-size: 0.8rem;
+  letter-spacing: 3px;
+  color: red;
+}
+
+input#Input {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  background: #0c0023;
+  box-shadow: inset 9px 9px 18px #05000e, inset -9px -9px 18px #130038;
+  color: aliceblue;
+  text-transform: capitalize;
+  border: 0.2px solid #dddddd1f;
+}
+
+select {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background: #0c0023;
+  box-shadow: inset -12px -12px 23px #05000e, inset 12px 12px 23px #130038;
+  color: aliceblue;
+  text-transform: capitalize;
+  font-size: 1rem;
+  border: 0.2px solid #dddddd1f;
+}
+
+option {
+  padding: 0.5rem;
+}
+
+button.add_post {
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  padding: 0.8rem 2.4rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  background: #0c0023;
+  box-shadow: inset -12px -12px 23px #05000e, inset 12px 12px 23px #130038;
+  color: aliceblue;
+  border: 1px solid #dddddd30;
+}
+
+// -----------------------add post pahe cnank----------------------------------

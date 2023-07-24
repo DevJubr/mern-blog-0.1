@@ -74,7 +74,7 @@ export const fakedsb = [
   {
     title: "dashboadrd",
     icon: <MdOutlineArticle />,
-    path: "",
+    path: "admin/dashboard/",
   },
   {
     title: "article",
@@ -83,12 +83,12 @@ export const fakedsb = [
     nested: [
       {
         title: "all article",
-        path: "posts/allpost",
+        path: "admin/dashboard/posts/allpost",
         icon: <LiaBorderAllSolid />,
       },
       {
         title: "add article",
-        path: "posts/addpost",
+        path: "admin/dashboard/posts/addpost",
         icon: <MdPostAdd />,
       },
     ],
@@ -100,12 +100,12 @@ export const fakedsb = [
     nested: [
       {
         title: "all tag",
-        path: "tags/alltag",
+        path: "admin/dashboard/tags/alltag",
         icon: <LiaBorderAllSolid />,
       },
       {
         title: "add tag",
-        path: "tags/addtag",
+        path: "admin/dashboard/tags/addtag",
         icon: <MdPostAdd />,
       },
     ],
@@ -117,12 +117,12 @@ export const fakedsb = [
     nested: [
       {
         title: "all category",
-        path: "categorys/allcategory",
+        path: "admin/dashboard/categorys/allcategory",
         icon: <LiaBorderAllSolid />,
       },
       {
         title: "add category",
-        path: "categorys/addcategory",
+        path: "admin/dashboard/categorys/addcategory",
         icon: <MdPostAdd />,
       },
     ],
@@ -134,12 +134,12 @@ export const fakedsb = [
     nested: [
       {
         title: "all users",
-        path: "admins/allsubadmins",
+        path: "admin/dashboard/admins/allsubadmins",
         icon: <LiaBorderAllSolid />,
       },
       {
         title: "add users",
-        path: "users/addusers",
+        path: "admin/dashboard/users/addusers",
         icon: <AiOutlineUserAdd />,
       },
     ],
@@ -149,7 +149,7 @@ export const fakedsb = [
 export const FakeCategory = [
   {
     id: Math.ceil((Math.random() * 9) / 8 + (2 % 2)),
-    name: "programing",
+    name: "select a N",
   },
   {
     id: Math.ceil((Math.random() * 9) / 8 + (2 % 2)),
@@ -167,7 +167,7 @@ export const FakeCategory = [
 export const FakeTags = [
   {
     id: Math.ceil((Math.random() * 9) / 8 + (2 % 2)),
-    name: "programing",
+    name: "select a N",
   },
   {
     id: Math.ceil((Math.random() * 9) / 8 + (2 % 2)),
