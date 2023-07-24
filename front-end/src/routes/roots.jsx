@@ -20,7 +20,9 @@ import SingUp from "../components/auth/singup/Singup";
 import SingIn from "../components/auth/singin/SingIn";
 import NavLayout from "../components/layout/NavLayout";
 import Login from "../components/auth/admin/Login";
-import HomeDashboard from "../components/dashboard/pages/home/Home";
+import LayoutOfD from "../components/dashboard/pages/Layout/LayoutOfD";
+import AddArticle from "../components/dashboard/pages/Article/AddArticle";
+import HomeD from "../components/dashboard/pages/Home/HomeD";
 // hendel route
 export const route = createBrowserRouter(
   createRoutesFromElements(
@@ -48,8 +50,9 @@ export const route = createBrowserRouter(
         <Route path="admin/login" element={<Login />} />
       </Route>
 
-      <Route>
-        <Route path="admin/dashboard" element={<HomeDashboard />} />
+      <Route path={"admin/dashboard"} element={<LayoutOfD />}>
+        <Route index element={<HomeD />} />
+        <Route path="admin/dashboard/post/addpost" element={<AddArticle />} />
       </Route>
     </>
   )

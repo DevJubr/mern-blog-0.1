@@ -145,3 +145,40 @@ export const fakedsb = [
     ],
   },
 ];
+
+export const FakeCategory = [
+  {
+    id: Math.ceil((Math.random() * 9) / 8 + (2 % 2)),
+    name: "programing",
+  },
+  {
+    id: Math.ceil((Math.random() * 9) / 8 + (2 % 2)),
+    name: "technonogy",
+  },
+  {
+    id: Math.ceil((Math.random() * 9) / 8 + (2 % 2)),
+    name: "C sharp",
+  },
+  {
+    id: Math.ceil((Math.random() * 9) / 8 + (2 % 2)),
+    name: "C plus plus",
+  },
+];
+export const FakeTags = [
+  {
+    id: Math.ceil((Math.random() * 9) / 8 + (2 % 2)),
+    name: "programing",
+  },
+  {
+    id: Math.ceil((Math.random() * 9) / 8 + (2 % 2)),
+    name: "technonogy",
+  },
+  {
+    id: Math.ceil((Math.random() * 9) / 8 + (2 % 2)),
+    name: "C sharp",
+  },
+  {
+    id: Math.ceil((Math.random() * 9) / 8 + (2 % 2)),
+    name: "C plus plus",
+  },
+];

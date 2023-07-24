@@ -5,6 +5,9 @@
   display: flex;
   align-items: flex-start;
   overflow-x: hidden;
+  position: relative;
+  top: 0;
+  left: 0;
 }
 
 nav.Dashboard__navbar {
@@ -174,5 +177,14 @@ ul.inner__option {
 .icon__showMOre {
   cursor: pointer;
 }
-
+li.innwe__list__option {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+main.Ds {
+  position: absolute;
+  top: 80px;
+  left: calc(100% - 70%);
+}
 // -----------------------home pahe cnank----------------------------------
