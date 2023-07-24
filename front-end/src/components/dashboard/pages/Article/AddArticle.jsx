@@ -1,5 +1,6 @@
 import { FakeCategory, FakeTags } from "../../../../utils";
 import FormGroup from "../../components/FormGroup";
+import RichText from "../../components/RichText";
 
 const AddArticle = () => {
   return (
@@ -10,7 +11,7 @@ const AddArticle = () => {
           <FormGroup name={"Slug"} type={"input"} />
           <FormGroup name={"Category"} type={"select"} optionA={FakeCategory} />
           <FormGroup name={"Tags"} type={"select"} optionA={FakeTags} />
-
+          <RichText />
           <button type={"submit"} className="add_post">
             Publish
           </button>
