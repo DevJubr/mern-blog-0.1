@@ -24,6 +24,7 @@ import LayoutOfD from "../components/dashboard/pages/Layout/LayoutOfD";
 import AddArticle from "../components/dashboard/pages/Article/AddArticle";
 import HomeD from "../components/dashboard/pages/Home/HomeD";
 import AllPosts from "../components/dashboard/pages/Article/AllPosts";
+import AddTag from "../components/dashboard/pages/tags/AddTag";
 // hendel route
 export const route = createBrowserRouter(
   createRoutesFromElements(
@@ -52,12 +53,17 @@ export const route = createBrowserRouter(
       </Route>
 
       <Route element={<LayoutOfD />}>
+        {/* layout */}
         <Route path={"admin/dashboard"} element={<HomeD />} />
+        {/* posts */}
         <Route
           path={"admin/dashboard/posts/addpost"}
           element={<AddArticle />}
         />
         <Route path={"admin/dashboard/posts/allpost"} element={<AllPosts />} />
+
+        {/* tags */}
+        <Route path={"admin/dashboard/tags/addtag"} element={<AddTag />} />
       </Route>
     </>
   )

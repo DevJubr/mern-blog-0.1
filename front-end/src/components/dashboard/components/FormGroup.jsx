@@ -1,4 +1,4 @@
-const FormGroup = ({ name, type, optionA }) => {
+const FormGroup = ({ name, type, optionA, adding }) => {
   if (type == "select") {
     return (
       <>
@@ -19,7 +19,12 @@ const FormGroup = ({ name, type, optionA }) => {
     return (
       <div className="FormGroup">
         <label htmlFor="Input">{name}</label>
-        <input type="text" placeholder={`enter your ${name}`} id="Input" />
+        <input
+          type="text"
+          placeholder={`enter your ${name}`}
+          id="Input"
+          className={adding && "adding"}
+        />
         <span className="errorMsg">{`*in valid ${name}`}</span>
       </div>
     );
