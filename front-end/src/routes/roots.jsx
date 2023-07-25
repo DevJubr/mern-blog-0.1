@@ -29,6 +29,7 @@ import AllTags from "../components/dashboard/pages/tags/AllTags";
 import AllCategory from "../components/dashboard/pages/category/AllCategory";
 import AddCategory from "../components/dashboard/pages/category/AddCategory";
 import SubAdmin from "../components/dashboard/pages/admin/SubAdmin";
+import AllUsers from "../components/dashboard/pages/admin/AllUsers";
 // hendel route
 export const route = createBrowserRouter(
   createRoutesFromElements(
@@ -82,6 +83,10 @@ export const route = createBrowserRouter(
         <Route
           path={"admin/dashboard/admins/allsubadmins"}
           element={<SubAdmin />}
+        />
+        <Route
+          path={"admin/dashboard/admins/allusers"}
+          element={<AllUsers />}
         />
       </Route>
     </>

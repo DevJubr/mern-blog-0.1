@@ -138,8 +138,8 @@ export const fakedsb = [
         icon: <LiaBorderAllSolid />,
       },
       {
-        title: "add users",
-        path: "admin/dashboard/users/addusers",
+        title: "all users",
+        path: "admin/dashboard/admins/allusers",
         icon: <AiOutlineUserAdd />,
       },
     ],

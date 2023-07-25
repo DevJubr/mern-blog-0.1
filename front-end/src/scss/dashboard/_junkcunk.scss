@@ -466,3 +466,11 @@ button.block {
 button.profile {
   border: 0.5px solid #adff2f8f;
 }
+td {
+  img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}
