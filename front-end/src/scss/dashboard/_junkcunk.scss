@@ -418,6 +418,45 @@ input.adding {
   gap: 3rem;
   margin: 2rem 0;
 }
+
+// ---------------------------home d-------------------------
+.HomeD {
+  width: 75%;
+  margin: 4rem 0;
+}
+
+.home__top {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  text-transform: capitalize;
+  margin: 5rem 0;
+}
+
+.home__top__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.home__top__icon svg {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+.home__top__singel {
+  width: 200px;
+  height: 100px;
+  background: #303d49;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  border-radius: 0.5rem;
+}
 // ______________________all sub admins________________________________
 .SubAdmin {
   width: 75%;
@@ -473,42 +512,4 @@ td {
     border-radius: 50%;
     object-fit: cover;
   }
-}
-// ---------------------------home d-------------------------
-.HomeD {
-  width: 75%;
-  margin: 4rem 0;
-}
-
-.home__top {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  text-transform: capitalize;
-  margin: 5rem 0;
-}
-
-.home__top__content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 0.8rem;
-}
-
-.home__top__icon svg {
-  width: 1.6rem;
-  height: 1.6rem;
-}
-.home__top__singel {
-  width: 200px;
-  height: 100px;
-  background: #303d49;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-  border-radius: 0.5rem;
 }
