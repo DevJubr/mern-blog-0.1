@@ -418,3 +418,51 @@ input.adding {
   gap: 3rem;
   margin: 2rem 0;
 }
+// ______________________all sub admins________________________________
+.SubAdmin {
+  width: 75%;
+  margin: 4rem 0;
+}
+
+.tbl__subA {
+  margin-top: 6rem;
+  width: 100%;
+}
+
+table.subAd {
+  width: 100%;
+  border-collapse: collapse;
+  text-transform: capitalize;
+}
+
+td,
+th {
+  text-align: left;
+  padding: 0.8rem;
+  border: 0.5px solid #dddddd1f;
+}
+
+.tblBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.tblBtn button {
+  font-size: 0.8rem;
+  text-transform: capitalize;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  background: transparent;
+  color: aliceblue;
+}
+
+button.block {
+  border: 0.5px solid #8b0000b8;
+}
+
+button.profile {
+  border: 0.5px solid #adff2f8f;
+}
