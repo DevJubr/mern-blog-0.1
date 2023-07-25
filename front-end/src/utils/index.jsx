@@ -133,7 +133,7 @@ export const fakedsb = [
     icon: <AiOutlineUser />,
     nested: [
       {
-        title: "all users",
+        title: "all sub admins",
         path: "admin/dashboard/admins/allsubadmins",
         icon: <LiaBorderAllSolid />,
       },
