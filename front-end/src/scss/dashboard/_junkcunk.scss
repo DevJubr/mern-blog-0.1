@@ -47,15 +47,13 @@ img.Dashboard__user__Pic {
   align-items: center;
   justify-content: space-between;
 }
-
-form.form__search__Dashboard {
-  position: relative;
-}
-
 input.Dashboard__search {
   background: #8a2be247;
   padding: 1rem 3rem 1rem 1rem;
   border-radius: 50px;
+}
+form.form__search__Dashboard {
+  position: relative;
 }
 
 button.submit_-search__Dashboard {
