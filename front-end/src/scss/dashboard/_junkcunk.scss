@@ -490,6 +490,18 @@ td {
   margin: 5rem 0;
 }
 
+.home__top__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.home__top__icon svg {
+  width: 1.6rem;
+  height: 1.6rem;
+}
 .home__top__singel {
   width: 200px;
   height: 100px;
@@ -499,17 +511,4 @@ td {
   justify-content: center;
   gap: 2rem;
   border-radius: 0.5rem;
-}
-
-.home__top__icon svg {
-  width: 1.6rem;
-  height: 1.6rem;
-}
-
-.home__top__content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 0.8rem;
 }
